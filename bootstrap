@@ -30,7 +30,7 @@ declare -r prog=$(basename $0 .sh)
 declare -r progpid=$$
 declare -r progdir=$(cd $(dirname $0) >/dev/null && pwd -P)
 declare -r program=$progdir/$(basename $0)
-declare -r progsrc=$(echo $progdir | sed s/-bld//)
+declare -r progsrc=${progdir%-bld}
 
 unset CDPATH
 
@@ -53,8 +53,13 @@ fini() {
 }
 
 init() {
-    case $(set -o) in
+    sets=$(set -o)
+    case "$sets" in
     (*posix*) set -o posix ;;
+    esac
+    case "$sets" in
+    (*xtrace*on*) xtrace_active=true ;;
+    ( * )         xtrace_active=false ;;
     esac
 
     trap 'die early death' 0
@@ -285,11 +290,10 @@ run_gnulib_tool() {
 	xstrtoimax
 "
 
-    echo  ${gltool} --import  ... >&2
-    {
-      ${gltool} --import ${gnulib_libs} 2>&1
-    } | sed '1,/^You may need to add #include/d' | \
-      tee import-log.txt
+    ${gltool} --import ${gnulib_libs} 2>&1 | tee glt-log.txt
+
+    sed '1,/^You may need to add #include/d' glt-log.txt > import-log.txt
+    rm -f glt-log.txt
 
     autopoint=$(command -v autopoint)
     ${autopoint} --version | head -n2 >&2
