@@ -150,6 +150,7 @@ install_libopts() {
     sed '/if INSTALL_LIBOPTS/inoinst_LIBRARIES = libopts.a
 	/if INSTALL_LIBOPTS/,/^endif$/d
 	/^libopts_la_LDFLAGS/d
+	/^libopts_la_CPPFLAGS/s@$@ -I$(top_srcdir)/lib@
 	s/libopts_la/libopts_a/g' Makefile.am > Makefile.X
     mv -f Makefile.X Makefile.am
     sed "/^#line/s@\.\./@${liboptsdir}/@" autoopts/usage-txt.h > X
@@ -323,7 +324,7 @@ setup_configure() {
     {
         sed '/^# *INVOKE_LIBOPTS_MACROS/q' configure.ac
         printf '['
-        for f in $(egrep '#include  *<' import-log.txt | \
+        for f in $(grep -E '#include  *<' import-log.txt | \
             sed 's/.*<//;s/>.*//')
         do
             f=$(echo "$f" | tr -- '-./' '___')

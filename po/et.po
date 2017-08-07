@@ -5,13 +5,14 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: sharutils 4.14.3\n"
+"Project-Id-Version: sharutils 4.15.2\n"
 "Report-Msgid-Bugs-To: bug-gnu-utils@gnu.org\n"
-"POT-Creation-Date: 2015-01-01 15:09-0800\n"
-"PO-Revision-Date: 2015-01-02 22:52+0200\n"
+"POT-Creation-Date: 2015-05-30 08:36-0700\n"
+"PO-Revision-Date: 2015-06-01 12:01+0300\n"
 "Last-Translator: Toomas Soome <tsoome@me.com>\n"
 "Language-Team: Estonian <linux-ee@lists.eenet.ee>\n"
 "Language: et\n"
+"X-Bugs: Report translation errors to the Language-Team address.\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -143,7 +144,7 @@ msgstr "%s Osa %d lõpp"
 msgid "restoration warning:  size of %s is not %s"
 msgstr "hoiatus taastamisel:  %s suurus ei ole %s"
 
-#: src/scripts.x:475 src/shar.c:1453
+#: src/scripts.x:475 src/shar.c:1456
 msgid "(text)"
 msgstr "(tekst)"
 
@@ -294,14 +295,14 @@ msgstr "Tõlgitud sõnede jaoks puudub vaba mälu\n"
 #. referenced via sharOptions.pzCopyright
 #: src/shar-opts.c:2257
 msgid ""
-"shar (GNU sharutils) 4.14.3\n"
-"Copyright (C) 1994-2014 Free Software Foundation, Inc., all rights reserved.\n"
+"shar (GNU sharutils) 4.15.2\n"
+"Copyright (C) 1994-2015 Free Software Foundation, Inc., all rights reserved.\n"
 "This is free software. It is licensed for use, modification and\n"
 "redistribution under the terms of the GNU General Public License,\n"
 "version 3 or later <http://gnu.org/licenses/gpl.html>\n"
 msgstr ""
-"shar (GNU sharutils) 4.14.3\n"
-"Autoriõigused © 1994-2014 Free Software Foundation, Inc., kõik õigused on\n"
+"shar (GNU sharutils) 4.15.2\n"
+"Autoriõigused © 1994-2015 Free Software Foundation, Inc., kõik õigused on\n"
 "reserveeritud.\n"
 "See on vaba tarkvara. See on litsenseeritud kasutamiseks, muutmiseks\n"
 "ja levitamiseks vastavalt GNU Üldise Avaliku Litsensi versioon 3 või\n"
@@ -402,8 +403,8 @@ msgstr ""
 "Kui te siiski kasutate 'uuencode', on eelistatud kodeerimismeetod base64.\n"
 
 #: src/shar-opts.c:2300
-msgid "shar (GNU sharutils) 4.14.3"
-msgstr "shar (GNU sharutils) 4.14.3"
+msgid "shar (GNU sharutils) 4.15.2"
+msgstr "shar (GNU sharutils) 4.15.2"
 
 #: src/shar-opts.c:2303
 msgid ""
@@ -787,7 +788,7 @@ msgstr ""
 "Automated Options versioon %s\n"
 "\tAutoriõigused (C) 1999-2014 Bruce Korb - kõik õigused on reserveeritud\n"
 
-#: ../makeshell.c:82
+#: ../makeshell.c:87
 #, c-format
 msgid "(AutoOpts bug):  %s.\n"
 msgstr "(AutoOpts bug):  %s.\n"
@@ -840,12 +841,12 @@ msgstr "%s: Nõutakse käsurea argumente\n"
 msgid "%d %s%s options allowed\n"
 msgstr "%d %s%s võtmed on lubatud\n"
 
-#: ../makeshell.c:89
+#: ../makeshell.c:94
 #, c-format
 msgid "%s error %d (%s) calling %s for '%s'\n"
 msgstr "%s viga %d (%s) kasutades %s '%s' jaoks\n"
 
-#: ../makeshell.c:301
+#: ../makeshell.c:306
 msgid "interprocess pipe"
 msgstr "protsesside vaheline toru"
 
@@ -1005,7 +1006,7 @@ msgstr "Lisainfot saate käsuga '%s %s'.\n"
 msgid "one %s%s option allowed\n"
 msgstr "lubatud on üks %s%s võti\n"
 
-#: ../makeshell.c:203 ../makeshell.c:938 ../usage.c:274 ../usage.c:415
+#: ../makeshell.c:208 ../makeshell.c:943 ../usage.c:274 ../usage.c:415
 #: ../usage.c:625 ../version.c:175 src/uuencode.c:107 src/uuencode.c:184
 #: src/uuencode.c:273 src/uuencode.c:278 src/uuencode.c:280 src/uuencode.c:282
 msgid "standard output"
@@ -1015,7 +1016,7 @@ msgstr "standard väljund"
 msgid "standard error"
 msgstr "standard veavoog"
 
-#: ../makeshell.c:203 ../makeshell.c:938 ../usage.c:273 ../usage.c:414
+#: ../makeshell.c:208 ../makeshell.c:943 ../usage.c:273 ../usage.c:414
 #: ../usage.c:624 ../version.c:174
 msgid "write"
 msgstr "kirjutamise"
@@ -1035,118 +1036,118 @@ msgstr "%s viga:  võti %s nõuab võtit %s\n"
 msgid "%s warning:  cannot save options - %s not regular file\n"
 msgstr "%s hoiatus:  võtmeid ei saa salvestada - %s ei ole tavaline fail\n"
 
-#: src/shar.c:357
+#: src/shar.c:360
 #, c-format
 msgid "printf formatting error:  %s\n"
 msgstr "printf vormindamis viga:  %s\n"
 
-#: src/shar.c:404
+#: src/shar.c:407
 msgid "sharutils bug - no status"
 msgstr "sharutils viga - olek puudub"
 
-#: src/shar.c:753
+#: src/shar.c:756
 msgid "Too many directories for mkdir generation"
 msgstr "Liiga palju katalooge mkdir käsule"
 
-#: src/shar.c:836 src/shar.c:1695
+#: src/shar.c:839 src/shar.c:1699
 #, c-format
 msgid "Cannot access %s"
 msgstr "%s ei saa kasutada"
 
-#: src/shar.c:931
+#: src/shar.c:934
 #, c-format
 msgid "Cannot get current directory name"
 msgstr "Ei õnnestu tuvastada jooksva kataloogi nime"
 
-#: src/shar.c:1020
+#: src/shar.c:1023
 #, c-format
 msgid "Starting file %s\n"
 msgstr "Alustan fili %s\n"
 
-#: src/shar.c:1114
+#: src/shar.c:1117
 msgid "Could not popen command"
 msgstr "popen käsk ebaõnnestus"
 
-#: src/shar.c:1174
+#: src/shar.c:1177
 #, c-format
 msgid "Cannot open file %s"
 msgstr "Faili %s ei saa avada"
 
-#: src/shar.c:1300 src/shar.c:1311 src/shar.c:1919
+#: src/shar.c:1303 src/shar.c:1314 src/shar.c:1923
 msgid "call"
 msgstr "kutsun"
 
-#: src/shar.c:1323
+#: src/shar.c:1326
 msgid "pipe fd"
 msgstr "pipe fd"
 
-#: src/shar.c:1438 src/shar.c:1452
+#: src/shar.c:1441 src/shar.c:1455
 msgid "text"
 msgstr "tekst"
 
-#: src/shar.c:1555
+#: src/shar.c:1559
 #, c-format
 msgid "Continuing file %s\n"
 msgstr "Jätkan faili %s\n"
 
-#: src/shar.c:1690
+#: src/shar.c:1694
 #, c-format
 msgid "%s: Not a regular file"
 msgstr "%s: Pole tavaline fail"
 
-#: src/shar.c:1738
+#: src/shar.c:1742
 msgid "empty"
 msgstr "tühi"
 
-#: src/shar.c:1765
+#: src/shar.c:1769
 #, c-format
 msgid "Saving %s (%s)"
 msgstr "Salvestan %s (%s)"
 
-#: src/shar.c:1966
+#: src/shar.c:1970
 #, c-format
 msgid "Invalid format for output file names (%s): %s"
 msgstr "Vigane väljund failide nimede vorming (%s): %s"
 
-#: src/shar.c:1981
+#: src/shar.c:1985
 msgid "more than one format element"
 msgstr "enam kui üks vormingu element"
 
-#: src/shar.c:1986
+#: src/shar.c:1990
 msgid "no conversion character"
 msgstr "puudub teisenduse sümbol"
 
-#: src/shar.c:1995
+#: src/shar.c:1999
 msgid "format is too wide"
 msgstr "vorming on liiga lai"
 
-#: src/shar.c:2007
+#: src/shar.c:2011
 msgid "invalid conversion character"
 msgstr "vigane teisenduse sümbol"
 
-#: src/shar.c:2052
+#: src/shar.c:2056
 msgid "Opening"
 msgstr "Avan"
 
-#: src/shar.c:2067
+#: src/shar.c:2071
 msgid "Closing"
 msgstr "Sulen"
 
-#: src/shar.c:2154
+#: src/shar.c:2158
 #, c-format
 msgid "reopening stderr to /dev/null"
 msgstr "suunan stderr voo faili /dev/null"
 
-#: src/shar.c:2207
+#: src/shar.c:2211
 msgid "No input files"
 msgstr "Sisendfaile pole"
 
-#: src/shar.c:2224
+#: src/shar.c:2228
 #, c-format
 msgid "PLEASE avoid -X shars on Usenet or public networks"
 msgstr "PALUN vältige -X shar'e Usenetis ja avalikes võrkudes"
 
-#: src/shar.c:2248
+#: src/shar.c:2252
 #, c-format
 msgid ""
 "The '%s' option may not be intermixed with file names\n"
@@ -1155,12 +1156,12 @@ msgstr ""
 "Võtit '%s' ei saa failinimedega kasutada, välja arvatud juhul,\n"
 "kui kasutati võtit --intermix-type."
 
-#: src/shar.c:2266
+#: src/shar.c:2270
 #, c-format
 msgid "The '%s' option must appear before any file names"
 msgstr "Võti '%s' peab olema antud enne failinimesid"
 
-#: src/shar.c:2302
+#: src/shar.c:2306
 #, c-format
 msgid ""
 "invalid compaction type:  %s\n"
@@ -1169,11 +1170,11 @@ msgstr ""
 "vigane tihendamise tüüp:  %s\n"
 "tuntud tüübid on:\n"
 
-#: src/shar.c:2341
+#: src/shar.c:2345
 msgid "files on command line and --input-file-list specified"
 msgstr "--input-file-list ja käsureal näidatud failid"
 
-#: src/shar.c:2390
+#: src/shar.c:2394
 #, c-format
 msgid "Created %d files\n"
 msgstr "Loodud %d faili\n"
@@ -1183,7 +1184,7 @@ msgstr "Loodud %d faili\n"
 msgid "fs error %d (%s) %s-ing %s\n"
 msgstr "fs viga %d (%s) %s %s\n"
 
-#: src/unshar-opts.c:585 src/unshar-opts.c:647 src/uudecode.c:513
+#: src/unshar-opts.c:585 src/unshar-opts.c:647 src/uudecode.c:526
 #: src/uuencode.c:207
 msgid "standard input"
 msgstr "standardsisend"
@@ -1215,14 +1216,14 @@ msgstr "unshar fataalne viga:\n"
 #. referenced via unsharOptions.pzCopyright
 #: src/unshar-opts.c:931
 msgid ""
-"unshar (GNU sharutils) 4.14.3\n"
-"Copyright (C) 1994-2014 Free Software Foundation, Inc., all rights reserved.\n"
+"unshar (GNU sharutils) 4.15.2\n"
+"Copyright (C) 1994-2015 Free Software Foundation, Inc., all rights reserved.\n"
 "This is free software. It is licensed for use, modification and\n"
 "redistribution under the terms of the GNU General Public License,\n"
 "version 3 or later <http://gnu.org/licenses/gpl.html>\n"
 msgstr ""
-"shar (GNU sharutils) 4.14.3\n"
-"Autoriõigused © 1994-2014 Free Software Foundation, Inc., kõik õigused on\n"
+"shar (GNU sharutils) 4.15.2\n"
+"Autoriõigused © 1994-2015 Free Software Foundation, Inc., kõik õigused on\n"
 "reserveeritud.\n"
 "See on vaba tarkvara. See on litsenseeritud kasutamiseks, muutmiseks\n"
 "ja levitamiseks vastavalt GNU Üldise Avaliku Litsensi versioon 3 või\n"
@@ -1286,8 +1287,8 @@ msgstr ""
 "Iga leitud arhiiv pakitakse seejärel shalli programmi abil lahti.\n"
 
 #: src/unshar-opts.c:966
-msgid "unshar (GNU sharutils) 4.14.3"
-msgstr "unshar (GNU sharutils) 4.14.3"
+msgid "unshar (GNU sharutils) 4.15.2"
+msgstr "unshar (GNU sharutils) 4.15.2"
 
 #: src/unshar-opts.c:969
 msgid ""
@@ -1399,36 +1400,36 @@ msgstr ""
 msgid "could not allocate %zu bytes for %s\n"
 msgstr "ei õnnestu eraldada %zu baiti %s jaoks\n"
 
-#: src/unshar.c:202
+#: src/unshar.c:203
 #, c-format
 msgid "Found no shell commands after cut line in %s"
 msgstr "Failis %s puuduvad peale lõikerida edasised käsud"
 
-#: src/unshar.c:220
+#: src/unshar.c:222
 #, c-format
 msgid "%s is probably not a shell archive"
 msgstr "%s pole tõenäoliselt käsuinterpretaatori arhiiv"
 
-#: src/unshar.c:221
+#: src/unshar.c:223
 #, c-format
 msgid "The 'cut line' was followed by: %s"
 msgstr "'lõikereale' järgnes: %s"
 
-#: src/unshar.c:244
+#: src/unshar.c:246
 #, c-format
 msgid "Found no shell commands in %s"
 msgstr "%s ei sisalda käsklusi käsuinterpretaatorile"
 
-#: src/unshar.c:253
+#: src/unshar.c:255
 #, c-format
 msgid "%s looks like raw C code, not a shell archive"
 msgstr "%s paistab olema C kood, mitte käsuinterpretaatori arhiiv"
 
-#: src/unshar.c:324
+#: src/unshar.c:326
 msgid "file name buffer"
 msgstr "faili nime puhver"
 
-#: src/unshar.c:450
+#: src/unshar.c:452
 msgid "read/write buffer"
 msgstr "lugemise/kirjutamise puhver"
 
@@ -1459,14 +1460,14 @@ msgstr "uudecode fataalne viga:\n"
 #. referenced via uudecodeOptions.pzCopyright
 #: src/uudecode-opts.c:705
 msgid ""
-"uudecode (GNU sharutils) 4.14.3\n"
-"Copyright (C) 1994-2014 Free Software Foundation, Inc., all rights reserved.\n"
+"uudecode (GNU sharutils) 4.15.2\n"
+"Copyright (C) 1994-2015 Free Software Foundation, Inc., all rights reserved.\n"
 "This is free software. It is licensed for use, modification and\n"
 "redistribution under the terms of the GNU General Public License,\n"
 "version 3 or later <http://gnu.org/licenses/gpl.html>\n"
 msgstr ""
-"uudecode (GNU sharutils) 4.14.3\n"
-"Autoriõigused © 1994-2014 Free Software Foundation, Inc., kõik õigused on\n"
+"uudecode (GNU sharutils) 4.15.2\n"
+"Autoriõigused © 1994-2015 Free Software Foundation, Inc., kõik õigused on\n"
 "reserveeritud.\n"
 "See on vaba tarkvara. See on litsenseeritud kasutamiseks, muutmiseks\n"
 "ja levitamiseks vastavalt GNU Üldise Avaliku Litsensi versioon 3 või\n"
@@ -1554,8 +1555,8 @@ msgstr ""
 "saamiseks vaadake 'uuencode(5)'.\n"
 
 #: src/uudecode-opts.c:747
-msgid "uudecode (GNU sharutils) 4.14.3"
-msgstr "uudecode (GNU sharutils) 4.14.3"
+msgid "uudecode (GNU sharutils) 4.15.2"
+msgstr "uudecode (GNU sharutils) 4.15.2"
 
 #: src/uudecode-opts.c:750
 msgid ""
@@ -1623,69 +1624,69 @@ msgstr ""
 "Kasutamine:  uudecode [ -<lipp> [<väärtus>] | --<nimi>[{=| }<väärtus>] ]... [<fail>... ]\n"
 "Lisainfo saamiseks kasutaga 'uudecode --help'.\n"
 
-#: src/uudecode.c:120 src/uudecode.c:184
+#: src/uudecode.c:125 src/uudecode.c:189
 #, c-format
 msgid "%s: Short file"
 msgstr "%s: Lühike fail"
 
-#: src/uudecode.c:166
+#: src/uudecode.c:171
 #, c-format
 msgid "%s: No `end' line"
 msgstr "%s: Puudub rida `end'"
 
-#: src/uudecode.c:190
+#: src/uudecode.c:195
 #, c-format
 msgid "%s: invalid input"
 msgstr "%s: vigane sisend"
 
-#: src/uudecode.c:212 src/uudecode.c:226
+#: src/uudecode.c:217 src/uudecode.c:231
 msgid "cannot expand $HOME"
 msgstr "$HOME avaldamine ei õnnestu"
 
-#: src/uudecode.c:262
+#: src/uudecode.c:267
 #, c-format
 msgid "%s: Illegal file name: %s"
 msgstr "%s: Vigane faili nimi: %s"
 
-#: src/uudecode.c:269
+#: src/uudecode.c:274
 #, c-format
 msgid "No user '%s'"
 msgstr "Kasutaja '%s' puudub"
 
-#: src/uudecode.c:280 src/uudecode.c:342
+#: src/uudecode.c:285 src/uudecode.c:347
 msgid "output file name"
 msgstr "väljund faili nimi"
 
-#: src/uudecode.c:299
+#: src/uudecode.c:304
 #, c-format
 msgid "cannot access %s"
 msgstr "%s ei saa kasutada"
 
-#: src/uudecode.c:312
+#: src/uudecode.c:317
 #, c-format
 msgid "chmod of %s"
 msgstr "chmod %s"
 
-#: src/uudecode.c:336
+#: src/uudecode.c:341
 msgid "output name is empty"
 msgstr "väljundi nimi on tühi"
 
-#: src/uudecode.c:347
+#: src/uudecode.c:352
 #, c-format
 msgid "invalid base64 encoded name: %s"
 msgstr "vigane base64 kodeeritud nimi: %s"
 
-#: src/uudecode.c:382
+#: src/uudecode.c:387
 #, c-format
 msgid "%s: Invalid or missing 'begin' line\n"
 msgstr "%s: Vigane või puuduv rida 'begin'\n"
 
-#: src/uudecode.c:479
+#: src/uudecode.c:492
 #, c-format
 msgid "%s: Write error"
 msgstr "%s: Viga kirjutamisel"
 
-#: src/uudecode.c:519
+#: src/uudecode.c:532
 msgid ""
 "You cannot specify an output file when processing\n"
 "multiple input files.\n"
@@ -1718,14 +1719,14 @@ msgstr "uuencode fataalne viga:\n"
 #. referenced via uuencodeOptions.pzCopyright
 #: src/uuencode-opts.c:656
 msgid ""
-"uuencode (GNU sharutils) 4.14.3\n"
-"Copyright (C) 1994-2014 Free Software Foundation, Inc., all rights reserved.\n"
+"uuencode (GNU sharutils) 4.15.2\n"
+"Copyright (C) 1994-2015 Free Software Foundation, Inc., all rights reserved.\n"
 "This is free software. It is licensed for use, modification and\n"
 "redistribution under the terms of the GNU General Public License,\n"
 "version 3 or later <http://gnu.org/licenses/gpl.html>\n"
 msgstr ""
-"uuencode (GNU sharutils) 4.14.3\n"
-"Autoriõigused © 1994-2014 Free Software Foundation, Inc., kõik õigused on\n"
+"uuencode (GNU sharutils) 4.15.2\n"
+"Autoriõigused © 1994-2015 Free Software Foundation, Inc., kõik õigused on\n"
 "reserveeritud.\n"
 "See on vaba tarkvara. See on litsenseeritud kasutamiseks, muutmiseks\n"
 "ja levitamiseks vastavalt GNU Üldise Avaliku Litsensi versioon 3 või\n"
@@ -1808,8 +1809,8 @@ msgstr ""
 "Ctl-D) vaja anda korduvalt.\n"
 
 #: src/uuencode-opts.c:694
-msgid "uuencode (GNU sharutils) 4.14.3"
-msgstr "uuencode (GNU sharutils) 4.14.3"
+msgid "uuencode (GNU sharutils) 4.15.2"
+msgstr "uuencode (GNU sharutils) 4.15.2"
 
 #: src/uuencode-opts.c:697
 msgid ""
@@ -1884,57 +1885,62 @@ msgstr "faili nimi"
 msgid "Unknown system error"
 msgstr "Tundmatu süsteemne viga"
 
-#: lib/getopt.c:547 lib/getopt.c:576
+#: lib/getopt.c:575 lib/getopt.c:604
 #, c-format
 msgid "%s: option '%s' is ambiguous; possibilities:"
 msgstr "%s: võti '%s' on mitmetähenduslik; variandid:"
 
-#: lib/getopt.c:624 lib/getopt.c:628
+#: lib/getopt.c:619
+#, c-format
+msgid "%s: option '%s' is ambiguous\n"
+msgstr "%s: võti '%s' on mitmetähenduslik\n"
+
+#: lib/getopt.c:654 lib/getopt.c:658
 #, c-format
 msgid "%s: option '--%s' doesn't allow an argument\n"
 msgstr "%s: võti '--%s' ei luba argumenti\n"
 
-#: lib/getopt.c:637 lib/getopt.c:642
+#: lib/getopt.c:667 lib/getopt.c:672
 #, c-format
 msgid "%s: option '%c%s' doesn't allow an argument\n"
 msgstr "%s: võti '%c%s' ei luba argumenti\n"
 
-#: lib/getopt.c:685 lib/getopt.c:704
+#: lib/getopt.c:715 lib/getopt.c:734
 #, c-format
 msgid "%s: option '--%s' requires an argument\n"
 msgstr "%s: võti '--%s' nõuab argumenti\n"
 
-#: lib/getopt.c:742 lib/getopt.c:745
+#: lib/getopt.c:772 lib/getopt.c:775
 #, c-format
 msgid "%s: unrecognized option '--%s'\n"
 msgstr "%s: tundmatu võti '--%s'\n"
 
-#: lib/getopt.c:753 lib/getopt.c:756
+#: lib/getopt.c:783 lib/getopt.c:786
 #, c-format
 msgid "%s: unrecognized option '%c%s'\n"
 msgstr "%s: tundmatu võti '%c%s'\n"
 
-#: lib/getopt.c:805 lib/getopt.c:808
+#: lib/getopt.c:835 lib/getopt.c:838
 #, c-format
 msgid "%s: invalid option -- '%c'\n"
 msgstr "%s: vigane võti -- '%c'\n"
 
-#: lib/getopt.c:861 lib/getopt.c:878 lib/getopt.c:1088 lib/getopt.c:1106
+#: lib/getopt.c:891 lib/getopt.c:908 lib/getopt.c:1118 lib/getopt.c:1136
 #, c-format
 msgid "%s: option requires an argument -- '%c'\n"
 msgstr "%s: võti nõuab argumenti -- '%c'\n"
 
-#: lib/getopt.c:934 lib/getopt.c:950
+#: lib/getopt.c:964 lib/getopt.c:980
 #, c-format
 msgid "%s: option '-W %s' is ambiguous\n"
 msgstr "%s: võti '-W %s' on mitmetähenduslik\n"
 
-#: lib/getopt.c:974 lib/getopt.c:992
+#: lib/getopt.c:1004 lib/getopt.c:1022
 #, c-format
 msgid "%s: option '-W %s' doesn't allow an argument\n"
 msgstr "%s: võti '-W %s' ei luba kasutada argumenti\n"
 
-#: lib/getopt.c:1013 lib/getopt.c:1031
+#: lib/getopt.c:1043 lib/getopt.c:1061
 #, c-format
 msgid "%s: option '-W %s' requires an argument\n"
 msgstr "%s: võti '-W %s' nõuab argumenti\n"
