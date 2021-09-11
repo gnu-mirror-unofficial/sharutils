@@ -464,18 +464,7 @@ decode (char const * inname)
 
   {
     bool use_stdout = (outname[0] == '-') && (outname[1] == NUL);
-    if (use_stdout)
-      {
-        /*
-         * In the world of GNU, a file name argument of "-" means
-         * use stdin or stdout. But that's not POSIX. Make sure we're
-         * not in a POSIX-ly correct environment
-         */
-        char const * p = getenv("POSIXLY_CORRECT");
-        if (p != NULL)
-          use_stdout = false; // "-" is a file name
-      }
-    else
+    if (! use_stdout)
       use_stdout = (strcmp (outname, "/dev/stdout") == 0);
 
     /*
