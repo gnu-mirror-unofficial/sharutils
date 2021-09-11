@@ -1,25 +1,27 @@
 # Chinese translations for sharutils package.
 # Copyright (C) 2008 Free Software Foundation, Inc.
 # This file is distributed under the same license as the sharutils package.
-# Ji ZhengYu <zhengyuji@gmail.com>, 2015. 
+# Ji ZhengYu <zhengyuji@gmail.com>, 2015.
+# Boyuan Yang <073plan@gmail.com>, 2019.
 msgid ""
 msgstr ""
 "Project-Id-Version: sharutils 4.15.2\n"
 "Report-Msgid-Bugs-To: bug-gnu-utils@gnu.org\n"
 "POT-Creation-Date: 2015-05-30 08:36-0700\n"
-"PO-Revision-Date: 2015-09-01 09:26中国标准时间\n"
-"Last-Translator: Ji ZhengYu <zhengyuji@gmail.com>\n"
+"PO-Revision-Date: 2019-10-29 14:32-0400\n"
+"Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
-"X-Bugs: Report translation errors to the Language-Team address.\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Bugs: Report translation errors to the Language-Team address.\n"
+"X-Generator: Poedit 2.2.4\n"
 
 #: src/scribble.c:166
 #, c-format
 msgid "could not allocate %u bytes of scribble space"
-msgstr "无法为scribble 空间分配%u 字节内存"
+msgstr "无法为 scribble 空间分配 %u 字节内存"
 
 #. TRANSLATORS:  This is a phony function generated for the purpose of
 #. constructing the strings to be extracted for translation.  Each string
@@ -30,7 +32,7 @@ msgstr "无法为scribble 空间分配%u 字节内存"
 #.
 #: src/scripts.x:449
 msgid "Note: not verifying md5sums.  Consider installing GNU coreutils."
-msgstr "注意: 未验证 md5sums。请考虑安装GNU coreutils 工具包。"
+msgstr "注意: 未验证 md5sums。请考虑安装 GNU coreutils 工具包。"
 
 #: src/scripts.x:450
 msgid ""
@@ -174,11 +176,11 @@ msgstr "文件 %s 在第 %d 块继续"
 
 #: src/scripts.x:482
 msgid "Please unpack part 1 first!"
-msgstr "请先解包第 1 块"
+msgstr "请先解包第 1 部分！"
 
 #: src/scripts.x:483
 msgid "Please unpack part ${shar_sequence} next!"
-msgstr "下次请部分解包 ${shar_sequence}!"
+msgstr "下次请部分解包 ${shar_sequence}！"
 
 #: src/scripts.x:484
 #, c-format
@@ -226,7 +228,7 @@ msgstr "x - 还原 %s %s"
 #: src/scripts.x:493
 #, c-format
 msgid "File %s is complete"
-msgstr "处理完文件 %s"
+msgstr "文件 %s 已完成"
 
 #: src/scripts.x:494
 #, c-format
@@ -254,7 +256,7 @@ msgstr "x - 无法删除目录锁 %s。"
 #: src/shar-opts.c:1870
 #, c-format
 msgid "Cannot reopen %s as stdin"
-msgstr "无法重开标准输入台 %s"
+msgstr "无法重新打开 %s 作为标准输入"
 
 #: src/shar-opts.c:1990
 msgid "shar usage error:\n"
@@ -1124,18 +1126,16 @@ msgid "more than one format element"
 msgstr "多于一种格式"
 
 #: src/shar.c:1990
-#, fuzzy
 msgid "no conversion character"
-msgstr "无选项字符"
+msgstr "无转换字符"
 
 #: src/shar.c:1999
 msgid "format is too wide"
 msgstr "格式太长"
 
 #: src/shar.c:2011
-#, fuzzy
 msgid "invalid conversion character"
-msgstr "选项字符无效"
+msgstr "转换字符无效"
 
 #: src/shar.c:2056
 msgid "Opening"
@@ -1148,7 +1148,7 @@ msgstr "正在关闭"
 #: src/shar.c:2158
 #, c-format
 msgid "reopening stderr to /dev/null"
-msgstr "reopening stderr 至 /dev/null"
+msgstr "正重新打开标准错误至 /dev/null"
 
 #: src/shar.c:2211
 msgid "No input files"
@@ -1519,18 +1519,13 @@ msgstr ""
 "\n"
 
 #: src/uudecode-opts.c:724
-#, fuzzy, c-format
-#| msgid ""
-#| "uudecode (GNU sharutils) - decode an encoded file\n"
-#| "Usage:  uudecode [ -<flag> [<val>] | --<name>[{=| }<val>] ]... [<file>...]\n"
-#| "\n"
+#, c-format
 msgid ""
 "uudecode (GNU sharutils) - decode an encoded file\n"
 "Usage:  %s [ -<flag> [<val>] | --<name>[{=| }<val>] ]... [<file>...]\n"
 msgstr ""
 "uudecode (GNU sharutils) - 解码一个编码文件\n"
-"用法:  uudecode [ -<选项> [<值>] | --<选项完整名字>[{=| }<值>] ]... [<file>...]\n"
-"\n"
+"用法:  %s [ -<选项> [<值>] | --<选项完整名字>[{=| }<值>] ]... [<file>...]\n"
 
 #: src/uudecode-opts.c:728
 msgid "If no 'file'(s) are provided, then standard input is decoded.\n"
@@ -1702,7 +1697,7 @@ msgstr "输出名为空"
 #: src/uudecode.c:352
 #, c-format
 msgid "invalid base64 encoded name: %s"
-msgstr "无效的base64 编码名: %s"
+msgstr "无效的 base64 编码名: %s"
 
 #: src/uudecode.c:387
 #, c-format
@@ -1813,7 +1808,6 @@ msgstr ""
 "\n"
 
 #: src/uuencode-opts.c:683 src/uuencode-opts.c:716
-#, fuzzy
 msgid ""
 "'uuencode' will read 'in-file' if provided and otherwise read data from\n"
 "standard in and write the encoded form to standard out.  The output will\n"
@@ -1823,12 +1817,11 @@ msgid ""
 "standard out.\n"
 "\n"
 msgstr ""
-"'uuencode' 会读取'in-file' 参数(若提供)，否则从标准输入读取数据\n"
-"并将编码过的形式发送至标准输出。输出内容将以header 行起始，\n"
-"header 行由'uudecode' 给出，输出建议文件'output-name' 及访问方式。\n"
-"若'output-name' 被指定到 'dev/stdout'，那'uudecode' 将把解码过的文件\n"
+"'uuencode' 会读取 'in-file' 参数(若提供)，否则从标准输入读取数据\n"
+"并将编码过的形式发送至标准输出。 输出内容将以 header 行起始，\n"
+"header 行由 'uudecode' 给出，输出建议文件 'output-name' 及访问方式。\n"
+"若'output-name' 被指定为 '/dev/stdout'，'uudecode' 将把解码过的文件\n"
 "列印到标准输出。\n"
-"\n"
 "\n"
 
 #: src/uuencode-opts.c:689

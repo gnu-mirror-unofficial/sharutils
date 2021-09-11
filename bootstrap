@@ -390,7 +390,7 @@ list_potfiles() {
 }
 
 {
-    PS4='>${FUNCNAME:-bs}> '
+    PS4='+shar=${FUNCNAME:-=}-$LINENO> '
     init
     versioned_files
     setup_configure

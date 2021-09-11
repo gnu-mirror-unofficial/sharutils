@@ -296,7 +296,7 @@ static uudecode_exit_code_t
 reopen_output (char const * outname, int mode)
 {
   /* Check out file if it exists */
-  if (!access(outname, F_OK))
+  if (! access (outname, F_OK))
     {
       struct stat attr;
       if (lstat(outname, &attr) == -1)
@@ -462,20 +462,39 @@ decode (char const * inname)
       *pz = NUL;
     }
 
-  if (  (strcmp (outname, "/dev/stdout") != 0)
-     && (strcmp (outname, "-") != 0) )
-    {
-      rval = reopen_output (outname, mode);
-      if (rval != UUDECODE_EXIT_SUCCESS)
-        goto fail_return;
-    }
+  {
+    bool use_stdout = (outname[0] == '-') && (outname[1] == NUL);
+    if (use_stdout)
+      {
+        /*
+         * In the world of GNU, a file name argument of "-" means
+         * use stdin or stdout. But that's not POSIX. Make sure we're
+         * not in a POSIX-ly correct environment
+         */
+        char const * p = getenv("POSIXLY_CORRECT");
+        if (p != NULL)
+          use_stdout = false; // "-" is a file name
+      }
+    else
+      use_stdout = (strcmp (outname, "/dev/stdout") == 0);
+
+    /*
+     * If we're not using stdout, then outname points to an actual file name
+     */
+    if (! use_stdout)
+      {
+        rval = reopen_output (outname, mode);
+        if (rval != UUDECODE_EXIT_SUCCESS)
+          goto fail_return;
+      }
 #ifdef __MINGW32__
-  else if (_setmode (fileno (stdout), _O_BINARY) == -1)
-    {
-      rval = UUDECODE_EXIT_NO_OUTPUT;
-      goto fail_return;
-    }
+    else if (_setmode (fileno (stdout), _O_BINARY) == -1)
+      {
+        rval = UUDECODE_EXIT_NO_OUTPUT;
+        goto fail_return;
+      }
 #endif
+  }
 
   /* We use different functions for different encoding methods.
      A common function would slow down the program.  */

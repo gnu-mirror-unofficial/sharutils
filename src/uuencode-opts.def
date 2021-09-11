@@ -30,8 +30,9 @@ detail = <<- _EODetail_
 	read data from standard in and write the encoded form to standard out.
 	The output will begin with a header line for use by @file{uudecode}
 	giving it the resulting suggested file @file{output-name} and access
-	mode.  If the @file{output-name} is specifically @file{/dev/stdout},
-	then @file{uudecode} will emit the decoded file to standard out.
+	mode.  If the @file{output-name} is specifically either
+	@file{/dev/stdout} or @file{-}, then @file{uudecode} will emit the
+	decoded file to standard out.
 
 	@strong{Note}: @file{uuencode} uses buffered input and assumes that it
 	is not hand typed from a tty.  The consequence is that at a tty, you
