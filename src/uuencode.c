@@ -2,7 +2,7 @@
 static const char cright_years_z[] =
 
 /* uuencode utility.
-   Copyright (C) */ "1994-2015";
+   Copyright (C) */ "1994-2015, 2021";
 
 /* Free Software Foundation, Inc.
 
